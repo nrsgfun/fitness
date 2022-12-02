@@ -26,6 +26,23 @@ img, video {
 	box-sizing: border-box;
 }
 
+/* Style rules for skip navivation link */
+.skip {
+	position: absolute;
+	left: -999px;
+}
+
+.skip:focus {
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	padding: 0.5%;
+	top: auto;
+	left: auto;
+	right: 1px;
+	z-index: 1;
+}
+
 /* Style rules for mobile viewport*/
 		
 /* Style rule for header */

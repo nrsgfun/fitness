@@ -2,25 +2,44 @@
 <!-- This website template was created by: Randy Rusch -->
 <html lang="en">
 <head>
-	<title>About Us</title>
+	<title>Fitness Equipment - Personal Training | About Us</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Forward Fitness Club has state-of-the-art fitness equipment and provides personal training.">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 	
 </head>
 <body>
 
 <div id="container">
 
+	<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About US</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+
 	<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 		</header>
 
-	<!-- Use the nav area to add hyperlinks to other pages within the website -->	
-		<nav>
-			<ul class="tablet-desktop">
+	<!-- Tablet, Desktop, Nav -->	
+		<nav class="tablet-desktop">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="classes.html">Classes</a></li>
@@ -32,7 +51,15 @@
 	<!-- Use the main area to add the main content of the webpage -->	
 		<main>
 		
-		<div id="weights">
+			<video controls poster="images/hero-image.jpg">
+				<source src="media/ffc_video.mp4" type="video/mp4">
+				<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+				<source src="media/ffc_video/webm" type="video/webm">
+				<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+				<p>Your browser does not support the video element.</p>
+			</video>
+						
+		<section id="weights">
 		
 			<h1>Weights</h1>
 			<img class="round" src="images/people-with-weights.jpg" alt="Two people working out with a weight in each hand">
@@ -43,9 +70,9 @@
 				<li>Barbells</li>
 			</ul>
 			
-		</div>
+		</section>
 		
-		<div id="cardio">
+		<section id="cardio">
 		
 			<h1>Cardio</h1>
 			<img class="round" src="images/people-workingout-machines.jpg" alt="Cardio Equipment">
@@ -56,9 +83,9 @@
 				<li>Consistent Support and Motivation</li>
 			</ul>
 			
-		</div>
+		</section>
 		
-		<div id="training">
+		<section id="training">
 		
 			<h1>Personal Training</h1>
 			<img class="round" src="images/personal-trainer.jpg" alt="Personal Training">
@@ -69,9 +96,9 @@
 				<li>Consistent Support and Motivation</li>
 			</ul>
 			
-		</div>
+		</section>
 		
-		<div id="exercises" class="tablet-desktop">
+		<section id="exercises" class="tablet-desktop">
 		
 			<h1>Common Exercises</h1>
 			<p>The following are common exercises that we encourage our clients to do as part of their daily exercises routine.</p>
@@ -88,17 +115,28 @@
 				
 			<p>For more information about how to stay active, visit the <a href="https://www.hhs.gov/fitness/be-active/index.html" target="_blank" class="external-link">U.S. Department of Health and Human Services</a>.</p>
 			
-			</div>	
+			</section>	
 		
 		</main>
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
-			<p>&copy; Copyright 2022. All Rights Reserve.</p>
-			<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+		
+			<div class="copyright">
+				<p>&copy; Copyright 2022. All Rights Reserve.</p>
+				<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+			</div>
+			
+			<div class="social">
+				<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div>
+			
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/script.js"></script>
 	
 </body>
 </html>

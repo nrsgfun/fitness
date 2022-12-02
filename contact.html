@@ -2,25 +2,44 @@
 <!-- This website template was created by: Randy Rusch -->
 <html lang="en">
 <head>
-	<title>Contact Us</title>
+	<title>Contact Us - Location | Forward Fitness Club</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="desciption" content="Forward Fitness Club provides a complimentary one-week trial membership. Contact us today to learn more.">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 	
 </head>
 <body>
 
 <div id="container">
 
+	<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About US</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+
 	<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
 		</header>
 
-	<!-- Use the nav area to add hyperlinks to other pages within the website -->	
-		<nav>
-			<ul class="tablet-desktop">
+	<!-- Tablet, Desktop, Nav -->	
+		<nav class="tablet-desktop">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="classes.html">Classes</a></li>
@@ -30,7 +49,7 @@
 		</nav>
 
 	<!-- Use the main area to add the main content of the webpage -->	
-		<main>
+	<main>
 		
 		<div id="contact">
 		
@@ -45,15 +64,62 @@
 		
 		</div>
 		
+		<div id="form">
+			<h2>Complete the form below and one of our staff members will contact you.</h2>
+			<Form class="form-grid"><!--Start Form-->
+				<fieldset>
+					<legend>Customer Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone">
+				</fieldset>
+				
+				<fieldset>
+					<legend>Musical Interest</legend>
+					<p>I am interested in:</p>
+					<label for="guitarles"><input type="checkbox" name="interest" id="guitarles" value="Guitar Lessons">Guitar Lessons</label>
+					
+					<label for="piano"><input type="checkbox" name="interest" id="pianoles" value="Piano Lessons">Piano Lessons</label>
+					
+					<label for="violin"><input type="checkbox" name="interest" id="violinles" value="Violin Lessons">Violin Lessons</label>
+					
+					<label for="rent"><input type="checkbox" name="interest" id="rent" value="Rental Equipment">Rental Equipment</label>
+					
+				</fieldset>
+				
+				<type="submit" id="submit" value="Submit" class="btn">
+		</form>
+		
+		</div>
+		
 	</main>
 
 	<!-- Use the footer area to add webpage footer content -->	
 		<footer>
-			<p>&copy; Copyright 2022. All Rights Reserve.</p>
-			<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+		
+			<div class="copyright">
+				<p>&copy; Copyright 2022. All Rights Reserve.</p>
+				<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+			</div>
+			
+			<div class="social">
+				<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://www.twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div>
+			
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/script.js"></script>
 	
 </body>
 </html>
